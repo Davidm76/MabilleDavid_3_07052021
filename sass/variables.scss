@@ -1,0 +1,11 @@
+$primaire:#9356DC; 
+$secondaire:#FF79DA;
+$Tertiaire: #99E2D0;
+
+%btn_gradient {
+background: #ff79da;
+background: -moz-linear-gradient(-45deg,  #ff79da 0%, #9356dc 100%);
+background: -webkit-linear-gradient(-45deg,  #ff79da 0%,#9356dc 100%);
+background: linear-gradient(135deg,  #ff79da 0%,#9356dc 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff79da', endColorstr='#9356dc',GradientType=1 );
+}
