@@ -348,24 +348,37 @@ header {
 
 
 
-.btn {
-      @extend %btn_gradient;
-      @include border_r(50px, 50px, 50px, 50px);
-      @extend %color_white;
-      @include padding(0, 20px, 0, 20px);
-      @include margin(1rem, 0, 2rem, 0);
-      @extend %box_shadow_léger;
-            
-      &:hover {
-            transition: 0.5s;
-            @extend %box_shadow_hover;
-            @extend %btn_gradient_hover;
-      }
-}
+
 
 
 
 /* fin menu */
+
+/* bouton */
+
+.bouton {
+      background-color: $grisclair_sup;
+      @include flex;
+      width: 100%;
+      justify-content: center;
+
+            .btn {
+                  @extend %btn_gradient;
+                  @include border_r(50px, 50px, 50px, 50px);
+                  @extend %color_white;
+                  @include padding(1rem, 3rem, 1rem, 3rem);
+                  @include margin(1rem, 0, 5rem, 3rem);
+                  @extend %box_shadow_léger;
+            
+                  &:hover {
+                        transition: 0.5s;
+                        @extend %box_shadow_hover;
+                        @extend %btn_gradient_hover;
+                  }
+            }
+}
+
+/* fin bouton */
 
 /* footer */
 

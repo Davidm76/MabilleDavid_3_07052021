@@ -10,7 +10,7 @@
   font-weight: normal;
   font-style: normal;
 }
-.btn, .en_tete .btn {
+.bouton .btn, .en_tete .btn {
   background: #ff79da;
   background: -moz-linear-gradient(-45deg, #ff79da 0%, #9356dc 100%);
   background: -webkit-linear-gradient(-45deg, #ff79da 0%, #9356dc 100%);
@@ -18,7 +18,7 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ff79da", endColorstr="#9356dc",GradientType=1 );
 }
 
-.btn:hover, .en_tete .btn:hover {
+.bouton .btn:hover, .en_tete .btn:hover {
   background: #9356dc;
   background: -moz-linear-gradient(-45deg, #9356dc 1%, #ff79da 54%);
   background: -webkit-linear-gradient(-45deg, #9356dc 1%, #ff79da 54%);
@@ -40,15 +40,15 @@ body {
   background-color: #fff;
 }
 
-.btn, .menu div div:first-child, .vignette_menu a .nouveau, .vignette_menu, .filtre .texte, .en_tete .btn {
+.bouton .btn, .menu div div:first-child, .vignette_menu a .nouveau, .vignette_menu, .filtre .texte, .en_tete .btn {
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
-.btn:hover, .filtre .texte:hover, .en_tete .btn:hover {
+.bouton .btn:hover, .filtre .texte:hover, .en_tete .btn:hover {
   box-shadow: 4px 4px 12px 1px rgba(0, 0, 0, 0.3);
 }
 
-footer ul a, footer ul, .btn, .en_tete .btn {
+footer ul a, footer ul, .bouton .btn, .en_tete .btn {
   color: #fff;
 }
 
@@ -357,16 +357,25 @@ header a i {
   margin: 0 0 -1rem 0;
 }
 
-.btn {
-  border-radius: 50px 50px 50px 50px;
-  padding: 0 20px 0 20px;
-  margin: 1rem 0 2rem 0;
+/* fin menu */
+/* bouton */
+.bouton {
+  background-color: #E5E7E9;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
 }
-.btn:hover {
+.bouton .btn {
+  border-radius: 50px 50px 50px 50px;
+  padding: 1rem 3rem 1rem 3rem;
+  margin: 1rem 0 5rem 3rem;
+}
+.bouton .btn:hover {
   transition: 0.5s;
 }
 
-/* fin menu */
+/* fin bouton */
 /* footer */
 footer {
   display: flex;
